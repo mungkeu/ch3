@@ -14,15 +14,15 @@
 <!--        </property>-->
 
         <!-- 아래와 같이 생성자를 사용할 수도 있다. -->
-        <constructor-arg name="color" value="red"/>
-        <constructor-arg name="oil" value="100"/>
-        <constructor-arg name="engine" ref="engine"/>
-        <constructor-arg name="doors">
-            <array value-type="com.fastcampus.ch3.Door">
-                <ref bean="door"/>
-                <ref bean="door"/>
-            </array>
-        </constructor-arg>
+<!--        <constructor-arg name="color" value="red"/>-->
+<!--        <constructor-arg name="oil" value="100"/>-->
+<!--        <constructor-arg name="engine" ref="engine"/>-->
+<!--        <constructor-arg name="doors">-->
+<!--            <array value-type="com.fastcampus.ch3.Door">-->
+<!--                <ref bean="door"/>-->
+<!--                <ref bean="door"/>-->
+<!--            </array>-->
+<!--        </constructor-arg>-->
     </bean>
     <bean id="engine" class="com.fastcampus.ch3.Engine" scope="singleton"/>
     <bean id="door" class="com.fastcampus.ch3.Door" scope="prototype"/>
