@@ -26,7 +26,16 @@
 		<!-- 하위 패키지의 중복 클래스가 문제되므로 제외시킨다. -->
 		<context:exclude-filter type="regex" expression="com.fastcampus.ch3.diCopy*.*"/>
 	</context:component-scan>
-	
-	
+
+	<view-controller path="/" view-name="index"/>
+
+	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basenames">
+			<beans:list>
+				<beans:value>error_message</beans:value> <!-- /src/main/resources/error_message.properties -->
+			</beans:list>
+		</beans:property>
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+	</beans:bean>
 	
 </beans:beans>
